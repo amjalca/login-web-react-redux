@@ -1,7 +1,51 @@
-.Header {
-  background-color: #29a3a3;
-  height: 30px;
-  padding: 10px;
-  color: white;
-  text-align: right;
+html{
+	height: 100%;
+	width: 100%;	
+}
+
+body{
+	margin:0;
+	background: #FFF;
+	padding: 0px;
+	height: 100%;
+	font-family: arial, sans-serif;
+	font-size: 15px;
+}
+
+div{
+	position: relative;
+	overflow: hidden;
+}
+
+button{
+	cursor: pointer;
+}
+button:focus{
+	outline: none;
+}
+
+.Header{
+	border-bottom: 3px solid #29a3a3;
+	height: 30px;
+	padding: 10px;
+	color: white;
+	text-align: right;
+ }
+
+ .Users h3{
+ 	text-align: center;
+ }
+
+ .Ingreso{
+ 	margin: auto;
+    width: 10%;
+    border: 3px solid #29a3a3;
+    padding: 10px;
+ }
+
+ .Bye{
+ 	margin: auto;
+    width: 10%;
+    border: 3px solid #29a3a3;
+    padding: 10px;
  }

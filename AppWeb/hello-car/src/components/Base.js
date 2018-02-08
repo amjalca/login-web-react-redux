@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-// import '../assets/css/App.css';
 import Header from './Header.js';
 import Content from './Content.js';
 
 
-class App extends Component {
+class Base extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="Base">
         <Header/>
         <Content/>
       </div>
@@ -15,4 +14,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Base;
