@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Tabla from './Tabla.js'
+import Users from './Users.js'
 
 class Content extends Component {
   render() {
     return (
       <div className="Content">
         <div className="Usuarios">
-          <Tabla/>
+          <Users/>
         </div>
       </div>
     );
