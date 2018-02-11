@@ -26,7 +26,7 @@ class Login extends Component {
   	if (loggedIn === true){
       return (
         <Redirect to='/'/>
-        
+
       )
     }
 
@@ -79,7 +79,7 @@ class Login extends Component {
 }
 
 const mapStateToProps = (state) => {
-	console.log('state.loginReducers', state.loginReducers.loggedIn);
+	//console.log('state.loginReducers', state.loginReducers.loggedIn);
     return {
       loggedIn: state.loginReducers.loggedIn
     };

@@ -20,7 +20,7 @@ class Base extends Component {
 
     return (
         <div>
-          <h3>Debe autenticarse </h3>
+          <h3>Debe autenticarse primero </h3>
           <br/>
           <h4><Link to='/login'>Login</Link></h4>          
         </div>
@@ -29,7 +29,7 @@ class Base extends Component {
 }
 
 const mapStateToProps = (state) => {
-	console.log('desde Base', state.loginReducers.loggedIn);
+	//console.log('desde Base', state.loginReducers.loggedIn);
     return {
       loggedIn: state.loginReducers.loggedIn
     };

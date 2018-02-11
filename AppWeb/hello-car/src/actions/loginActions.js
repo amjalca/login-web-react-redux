@@ -5,10 +5,6 @@ export const LOGIN_REQUEST= 'USER_LOGIN_REQUEST'
 export const LOGIN_SUCESS= 'USER_LOGIN_SUCESS'
 export const LOGIN_FAILURE= 'USER_LOGIN_FAILURE'
 
-
-// export const loginActions = {
-// 	login
-// }
 /*
 * Accion creators
 */
