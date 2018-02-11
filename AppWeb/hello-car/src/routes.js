@@ -1,20 +1,26 @@
-import Login from './components/Login';
-import Logout from './components/Logout';
-import Base from './components/Base';
+import Login from './components/LoginPage/Login';
+import Logout from './components/LogoutPage/Logout';
+import Base from './components/HomePage/Base';
+import Pageko from './components/KoPage/Pageko';
 
 const routes = [
+	{
+		path: '/login',
+		component: Login,
+		exact: true
+	},
 	{
 		path: '/',
 		component: Base,
 		exact: true
 	},
 	{
-		path: '/login',
-		component: Login
+		path: '/logout',
+		component: Logout,
+		exact: true
 	},
 	{
-		path: '/logout',
-		component: Logout
+		component: Pageko
 	}
 ];
 
