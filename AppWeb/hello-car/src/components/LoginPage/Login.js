@@ -26,6 +26,7 @@ class Login extends Component {
   	if (loggedIn === true){
       return (
         <Redirect to='/'/>
+        
       )
     }
 
