@@ -34,11 +34,11 @@ class Login extends Component {
         	<form name="form" onSubmit = {this.handleLogin}>
         		<p>
         			<label>Usuario: </label>
-					<input ref="username" size="15" type="text"/>
+					<input ref="username" size="15" type="text" onChange={ev => this.setState({username: ev.target.value})} value={this.state.username}/>
 		        </p>
 		        <p>
 		        	<label>Password: </label>
-		        	<input ref="password" size="15" type="password"/>
+		        	<input ref="password" size="15" type="password" onChange={ev => this.setState({password: ev.target.value})} value={this.state.password}/>
 		        </p>
 		        <p>
 	        		<button type="submit" >Ingresar</button>
@@ -59,6 +59,11 @@ class Login extends Component {
 
 		console.log(username);
 		this.props.dispatch(login(username, password));
+
+		this.setState({
+          username: '',
+          password: ''
+        });
 	}
 }
 
