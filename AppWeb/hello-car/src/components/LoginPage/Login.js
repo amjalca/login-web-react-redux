@@ -61,20 +61,7 @@ class Login extends Component {
 		let password = this.refs.password.value;
 
 		console.log(username);
-		//login(username, password)
-		// let { username, password } = this.state;
 		this.props.dispatch(login(username, password));
-		
-
-		// if (username && password){
-		// 	dispatch(userActions.login(username, password));
-		// }
-
-		// this.props.login(username, password);
-		// this.setState({
-		// username: '',
-		// password: ''
-		// });
 	}
 }
 
@@ -85,10 +72,5 @@ const mapStateToProps = (state) => {
     };
 }
 
-// const mapDispatchToProps = (dispatch) => {
-// 	return {
-// 		loginReducers: (username, password) => dispatch(login(username, password))
-// 	}
-// }
 
 export default connect(mapStateToProps)(Login);

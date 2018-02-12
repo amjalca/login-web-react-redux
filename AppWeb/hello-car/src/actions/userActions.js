@@ -11,18 +11,21 @@ export const USER_REQUEST= 'USER_JSON_REQUEST'
 * Accion creators
 */
 
-export function showUsers() {
-	console.log('showUsers');
-    return (dispatch) => {
-    	dispatch( { type: USER_REQUEST, value: 'ok'} )
-        axios.get('http://jsonplaceholder.typicode.com/users')
-            .then((response) => {
-            	console.log(response);
-            	dispatch( { type: USER_SUCESS, value: response.data} )
-            })
-            .catch(function (error) {
-                dispatch( { type: USER_FAILURE, value: 'error'} )
-            });
+export function controlUsers(api, error) {
+    console.log('api ', api);
+    console.log('error ', error);
+    return dispatch => { 
+        dispatch(request({api}));
+        
+        if(api===true && error===false){
+            dispatch(success({api}));
+        }else{
+            dispatch(failure('error'));
+        }
+
     }
 
+    function request(api) { return { type: USER_REQUEST, api } }
+    function success(api) { return { type: USER_SUCESS, api } }
+    function failure(error) { return { type: USER_FAILURE, error } }
 }

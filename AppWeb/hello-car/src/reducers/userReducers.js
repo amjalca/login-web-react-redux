@@ -1,6 +1,6 @@
 const initialState ={
-	dataIn: false, 
-	users: []
+	dataIn: false,
+	dataApi: ''
 }
 
 const userReducers = (state = initialState, action) => {
@@ -9,19 +9,24 @@ const userReducers = (state = initialState, action) => {
 			return [
 				...state,
 				{
-					ok: action.ok,
+					dataApi: action.api,
 				}
 			]
+			break;
 		case 'USER_JSON_SUCESS':
-			return {
-				dataIn: true,
-				users: action.value
-			}
+			//return action.value
+			return [
+				...state,
+				{
+				dataIn: true
+				}
+			]
 			break;
 		case 'USER_JSON_FAILURE':
 			return [
 				...state,
 				{
+					dataIn: false,
 					error: action.error,
 				}
 			]
