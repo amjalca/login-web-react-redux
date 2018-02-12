@@ -10,4 +10,24 @@ Notas
 -   **Instalar**, los módulos necesarios con *npm install*
 -   **Empezar**, *npm start*
 
+Capturas
+=======================
+Usted verá el ruta *Protegida*:
+.. image:: ./AppWe/hello-car/public/Protegida.png
+  :alt:
+  :align: center
 
+Usted verá el ruta *Login*:
+.. image:: ./AppWe/hello-car/public/Login.png
+  :alt:
+  :align: center
+  
+Usted verá *Usuarios*:
+.. image:: ./AppWe/hello-car/public/Usuarios.png
+  :alt:
+  :align: center
+
+Usted verá el ruta *Logout*:
+.. image:: ./AppWe/public/Logout.png
+  :alt:
+  :align: center
