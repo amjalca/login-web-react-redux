@@ -6,9 +6,9 @@ import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom
 
 class Base extends Component {
   render() {
-  	const {loggedIn} = this.props
+  	const {loggedIn, loggedOut} = this.props
 
-  	if (loggedIn === true){
+  	if (loggedIn === true && loggedOut == false){
       return (
         <div className="Base">
 	        <Header/>
@@ -16,6 +16,15 @@ class Base extends Component {
 	    </div>
         
       )
+    }
+    if(loggedOut === true){
+      return (
+        <div>
+          <h3>Debe autenticarse primero </h3>
+          <br/>
+          <h4><Link to='/login'>Login</Link></h4>          
+        </div>
+    );
     }
 
     return (
@@ -31,7 +40,8 @@ class Base extends Component {
 const mapStateToProps = (state) => {
 	//console.log('desde Base', state.loginReducers.loggedIn);
     return {
-      loggedIn: state.loginReducers.loggedIn
+      loggedIn: state.loginReducers.loggedIn,
+      loggedOut: state.logoutReducers.submittedOut
     };
 }
 

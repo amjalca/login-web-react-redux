@@ -17,9 +17,6 @@ class Login extends Component {
 		this.handleLogin = this.handleLogin.bind(this);
 	}
 
-	componentWillMount(){
-
-	}
   render() {
   	const {loggedIn} = this.props
 
