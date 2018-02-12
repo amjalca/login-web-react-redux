@@ -13,21 +13,21 @@ Notas
 Capturas
 =======================
 Usted verá el ruta *Protegida*:
-.. image:: ./AppWe/hello-car/public/Protegida.png
+.. image:: ./AppWeb/hello-car/public/Protegida.png
   :alt:
   :align: center
 
 Usted verá el ruta *Login*:
-.. image:: ./AppWe/hello-car/public/Login.png
+.. image:: ./AppWeb/hello-car/public/Login.png
   :alt:
   :align: center
   
 Usted verá *Usuarios*:
-.. image:: ./AppWe/hello-car/public/Usuarios.png
+.. image:: ./AppWeb/hello-car/public/Usuarios.png
   :alt:
   :align: center
 
 Usted verá el ruta *Logout*:
-.. image:: ./AppWe/public/Logout.png
+.. image:: ./AppWeb/public/Logout.png
   :alt:
   :align: center
